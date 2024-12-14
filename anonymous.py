@@ -1,9 +1,15 @@
+def square(number: int) -> int:
+    return number * number
+
+
+
 # Anonymous Function Example
 # Using a lambda to square a number
 square = lambda x: x * x
 
 # Using lambda with a higher-order function
 numbers = [1, 2, 3, 4, 5]
+squared_numbers1 = list(map(square, numbers))
 squared_numbers = list(map(lambda x: x * x, numbers))
 
 print("Square of 4:", square(4))  # Output: 16
